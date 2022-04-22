@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Rating</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+<body>
+    <section class="container">
+        <div class="star-container">
+            <img src="images/icon-star.svg" alt="Star" class="star-image">
+        </div>
+        <h2 class="heading">How do we do?</h2>
+        <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating-container">
+            <div class="rating-box">
+                <input type="radio" class="rating-option" name="star">
+                <label for="star" class="rating-label"><span class="rating-number"> 1</span></label>
+            </div>
+            <div class="rating-box">
+                <input type="radio" class="rating-option" name="star">
+                <label for="star" class="rating-label"><span class="rating-number"> 2</span></label>
+            </div>
+            <div class="rating-box">
+                <input type="radio" class="rating-option" name="star">
+                <label for="star" class="rating-label"><span class="rating-number"> 3</span></label>
+            </div>
+            <div class="rating-box">
+                <input type="radio" class="rating-option" name="star">
+                <label for="star" class="rating-label"><span class="rating-number"> 4</span></label>
+            </div>
+            <div class="rating-box">
+                <input type="radio" class="rating-option" name="star">
+                <label for="star" class="rating-label"><span class="rating-number"> 5</span></label>
+            </div>
+        </div>
+        <a href="#" class="submit"><button class="submit-btn" id="submit-btn">submit</button></a>
+    </section>
+
+        <!-- THANK YOU SECTION -->
+
+    <section class="container thank-you-container">
+        <div class="image-container">
+            <img src="images/illustration-thank-you.svg" alt="Star" class="thank-you-image">
+        </div>
+        <div class="feedback">
+            <h3 class="number-of-stars">You selected <span class="stars-selected"></span> out of 5</h3>
+        </div>
+        <h2 class="heading">Thank you!</h2>
+        <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support don't hesitate to get in touch!</p>
+        
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

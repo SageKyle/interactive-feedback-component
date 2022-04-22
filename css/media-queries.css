@@ -1,0 +1,105 @@
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+
+    /* BASE */
+
+html {
+    font-size: 40%;
+}
+
+/* GENERAL STYLES */
+
+.container {
+    display: grid;
+    gap: 2rem;
+    width: 60%;
+    margin: auto;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 1rem;
+    padding: 5rem;
+    align-self: center;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+.paragraph {
+    margin-top: -1rem;
+}
+
+
+/* INDEX PAGE STYLES */
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.rating-box {
+    position: relative;
+}
+
+.rating-label {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5rem;
+    left: -1rem;
+}
+
+.rating-option:checked + .rating-label{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit-btn {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 0;
+}
+
+/* THANK YOU SECTION */
+
+.thank-you-container {
+    text-align: center;
+    font-family: inherit;
+    color: hsl(216, 12%, 54%);
+    gap: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 100;
+    display: none; 
+}
+
+.feedback {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    width: fit-content;
+    padding: 0 1rem;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    line-height: 0;
+}
+}

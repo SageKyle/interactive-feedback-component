@@ -17,14 +17,15 @@ numberOfStars.addEventListener('click', function (e) {
 })
 
 // SUBMIT EVENT LISTENER
-submit.addEventListener('click', function (e) {
-    if (star.textContent.length === 0) {
-        star.textContent = '0';
-        thankYouPage.style.display = 'grid';
-        welcomeSection.style.display = 'none';
-    } else {
-        thankYouPage.style.display = 'grid';
-        welcomeSection.style.display = 'none';
-
-    }
+submit.addEventListener('click', (e) => {
+    setTimeout( () => {
+        if (star.textContent.length === 0) {
+                star.textContent = '0';
+               thankYouPage.style.display = 'grid';
+               welcomeSection.style.display = 'none';
+           } else {
+               thankYouPage.style.display = 'grid';
+               welcomeSection.style.display = 'none';
+           }
+       }, 1000) //3000 is the delay in milliseconds
 });
